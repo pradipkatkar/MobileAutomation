@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 278.876 s <<< FAILURE! - in TestSuite
+com.flipcart.tests.Login.close  Time elapsed: 21.921 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated close.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+
+com.flipcart.tests.Logout.logoutTest  Time elapsed: 79.123 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MKFIPHP', ip: '192.168.207.119', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\pradi\eclipse-work..., appPackage: com.flipkart.android, automationName: uiautomator2, databaseEnabled: false, desired: {app: C:\Users\pradi\eclipse-work..., automationName: uiautomator2, deviceName: samsung, platformName: android, udid: RZ8M40MZXJT}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-A305F, deviceName: RZ8M40MZXJT, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: RZ8M40MZXJT, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 83, takesScreenshot: true, udid: RZ8M40MZXJT, viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: ae07e275-3784-4b5d-9926-05080f5272b7
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(text("Logout of this app"))}
+	at com.flipcart.tests.Logout.logoutTest(Logout.java:45)
+
+com.flipcart.tests.Logout.After  Time elapsed: 79.123 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated After.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+

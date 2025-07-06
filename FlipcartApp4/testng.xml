@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ 
+ <listeners>
+	 <listener class-name="com.flipcart.utilities.Reporting"/>
+ </listeners>
+ 
+  <test name="LoginTest">
+    <classes>
+      <class name="com.flipcart.tests.Login"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="SearchTest">
+    <classes>
+      <class name="com.flipcart.tests.SearchingItem"/>
+    </classes>
+  </test>
+  
+   <test name="AddToCartTest">
+    <classes>
+      <class name="com.flipcart.tests.AddToCart"/>
+    </classes>
+  </test>
+  
+  <test name="LogoutTest">
+    <classes>
+      <class name="com.flipcart.tests.Logout"/>
+    </classes>
+  </test>  
+  
+</suite> <!-- Suite -->
